@@ -1,0 +1,248 @@
+/*******************************/
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+header {
+  
+  padding: 0px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  margin-bottom: 0;
+  position: fixed;
+    width: 100%;
+  
+  
+
+}
+
+
+.container {
+  display: flex;
+  margin-top: 0;
+  
+}
+
+
+
+
+
+
+   /*************************************/    
+       
+/*reality*/       
+       
+       
+       body {
+            margin-top: 0px;
+            
+            font-family: 'segoe ui', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #e6e4d9;
+            overflow: hidden;
+
+        }
+        
+        nav {
+          height: 60px;
+          width: 100;
+          margin: 0 auto 0px;
+      }
+        nav >ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        nav >ul >li {
+            float: left;
+  
+        
+        }
+        #leftmenu {
+            float: left;
+            width: 30%;
+            margin-bottom: 20px;
+            
+
+
+        }
+        #main {
+            float: right;
+            width: 70%;
+            margin-bottom: 20px;
+        }
+        #footer {
+            clear: both;
+            width: 100%;
+        }
+        
+        .oval-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 10px 0;
+   
+  background-image: url(img/1.jpg);
+  background-size: cover;
+}
+
+select {
+        padding: 10px;
+        font-size: 10px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+      
+
+
+
+
+
+
+
+      margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #5b1a90;
+  color: rgb(255, 255, 255);
+}
+
+
+/*color animation code */
+body {
+    margin: 1;
+    padding: 1;
+    font-family: Arial, sans-serif;
+  }
+  
+  
+
+  
+
+  .column {
+    padding: 0px;
+    border: 1px solid #ddd;
+  }
+
+  .left-column {
+    flex: 1; 
+    color:red;
+  }
+  .lm{
+    color:blue;
+  }
+
+  .right-column {
+    flex: 4; 
+
+/***************COLORING CHANGING RIGHT SIDE PAGE**********/
+    
+   
+     }
+     
+  .footer {
+    background-image:url('vertical2.avif');
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+
+  /* Style for demonstration purpose */
+  .column:nth-child(odd) {
+    background-color: lightgray;
+  }
+
+  .column:nth-child(even) {
+    background-color: lightblue;
+
+  }
+
+
+  /******************Logo arranging color modes**********************/
+
+  *{
+    text-decoration: none;
+          margin-top: 0px;
+
+  }
+  
+  .navdiv{
+    display: flex; 
+          align-items: center;
+           justify-content: space-between;
+  }
+  .logo a{
+    font-size: 35px;
+           font-weight: 600; 
+           color: white;
+           
+  }
+  li{
+    list-style: none;
+           display: inline-block;
+  }
+  li a{
+          color: white;
+           font-size: 18px;
+            font-weight: bold; 
+            margin-right: 25px;
+  }
+  button{
+    background-color: orange; 
+          margin-left: 10px;
+          border-radius: 10px;
+           padding: 10px;
+            width: 90px;
+  }
+  button a{
+    color: white;
+           font-weight: bold; 
+           font-size: 15px;
+  }
+
+  /************** COLOR CHANGING PAGES LOOK LIKE RAINBOW COLORS ********************8*/
+  #color{
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  background-size: 1400% 100%;
+  animation: rainbow 10s linear infinite;
+
+
+}
+@keyframes rainbow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%;
+  }
+}
+
+

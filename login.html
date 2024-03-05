@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#333;
+  }
+  
+  .style {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+     }
+
+  input[type="submit"]:hover {
+    background-color: #555;
+  }
+</style> 
+</head>
+<body>
+
+<div class="style">
+  <h2>Login</h2>
+  <form onsubmit="checkLogin(event)">
+    <input type="text" id="username" placeholder="Username" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <input type="submit" value="Login">
+  </form>
+</div>
+
+<script>
+function checkLogin(event) {
+  event.preventDefault(); // Prevent form submission
+  
+  // Get input values
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
+  
+  // Check if credentials are valid (this is a basic example, replace with your own logic)
+  if (username === "admin" && password === "password") {
+    alert("Login successful!");
+    // Redirect to home page
+    window.location.href = "home.html";
+  } else {
+    alert("Invalid username or password. please enter the name as admin, pasw as password");
+  }
+}
+</script>
+
+</body>
+</html>

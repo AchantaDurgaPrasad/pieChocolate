@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Navigation Bar</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/">
+
+	<link rel="icon" type="image/png" href="img/000.png">
+
+	<style>
+		
+
+		.navbar{
+    
+           font-family: calibri; 
+           padding-right: 15px;
+           padding-left: 15px;
+           background-image: url('img/vertical2.avif');
+
+  }
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  .shadow-text {
+        font-size: 30px;
+        font-family: Arial, sans-serif;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.95); 
+  }
+  .logo1 {
+    
+    top: 10%;
+    left: 0px; /* Starting from left middle */
+    width: 200px; /* Adjust the size as needed */
+    height: auto;
+    opacity: 10;
+    transition: all 0.5s ease;
+    
+    
+        width: 300px;
+        height: 230px;
+        border-radius: 100%;
+        margin: 50px 0;
+         
+  }
+        
+      
+  
+	</style>
+
+</head>
+<body>
+	<header>
+
+
+
+
+		
+	<nav class="navbar" >
+		<div class="navdiv">
+			<div class="logo"><img class="oval-image" src="img/logo.jpg" height="55" />                         
+            </div>
+			<ul>
+				<li><a onclick="openPage('welcome.html')" href="#">Home</a></li>
+				<li><a onclick="openPage('orders.html')" href="#">Orders</a></li>
+
+				<li><a onclick="openPage('table.html')"  href="#">Pie Chocolates</a></li>
+				<li><a onclick="openPage('contact.html')" href="#">Contact</a></li>
+
+				<li><a onclick="openPage('about1.html')" href="#">About</a></li>
+				 
+				<button><a onclick="logout()" href="#">SignUp</a></button>
+			</ul>
+		</div>
+	</nav>
+</header>
+	
+		
+	  
+	  <div class="container">
+		<div class="column left-column">
+			
+			
+			
+        <img src="img/logo chess1.png"  class="logo1" >
+		
+		  <ul>
+            
+        	<li><a onclick="openPage('Left side/Cheese cakes.html')"  href="#">Cheese cakes</a></li></br>
+            <li><a href="#" onclick="openPage('Left side/Fruit pies.html')">Fruit pies</a></li></br>
+            <li><a href="#" onclick="openPage('Left side/Seasonal pies.html')">Seasonal pies</a></li></br>
+            <li><a href="#promos" onclick="openPage('Left side/Seasonal pies.html')">Promos</a></li></br>
+		</br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+        </ul>		</div>
+		<div class="column right-column"  id="right-column">
+		 
+		  <iframe id="pageFrame" src="home_content.html" frameborder="0" class="logo-action">
+
+			<img src="img/logo chess1.png" alt="Logo" class="logo" id="logo">
+		
+		</iframe>
+		<script src="script/script.js"></script>
+		</div>
+	  </div>
+	  
+	  <footer class="footer" >
+		<p>@prasad</p>
+	  </footer>
+	  <script>
+		function openPage(url) {
+		  document.getElementById("pageFrame").src = url;
+		}
+
+		/*****************LOGOUT************/
+		function logout() {
+  // Clear session storage
+  sessionStorage.clear();
+  
+  // Redirect to login page (replace "login.html" with your login page URL)
+  window.location.href = "login.html";
+}
+		</script>
+</body>
+</html>

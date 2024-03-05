@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <style>
+        #km {
+            text-align:center;
+           
+        }
+      
+        
+    </style>
+</head>
+<body>
+    </br>
+</br></br></br>
+    
+   
+    <div  style="width: 1000px;margin-left: auto;margin-right: auto;">
+        <select id="optionSelect" onchange="changeHTML()">
+            <option value="option0">Select</option>
+            <option value="option1">Chocolate Pie</option>
+            <option value="option2">Apple Pie</option>
+            <option value="option3">Mango Pie</option>
+            <option value="option4">Orange Pie</option>
+            
+        </select>
+        
+        
+       
+    <aside id="leftmenu">
+    
+            <h4 style="text-align: center; font-size: 25px; color:darkolivegreen;">Browser our pie's<h4>
+       
+       
+        <a href="index.html"><img src="img/10.jpg"/></a>
+      
+        <aside><p>pie, dish made by lining a shallow 
+            container with pastry and filling the 
+            container with a sweet or savoury mixture. 
+            A top crust may be added the pie is baked until the crust is crisp 
+            and the filling is cooked through.</p></aside>
+       
+    </aside></div>
+    <div id="existingContent">
+    </div>
+    
+    <script>
+        function changeHTML() {
+            var selectedOption = document.getElementById('optionSelect').value;
+            var existingContentDiv = document.getElementById('existingContent');
+            
+            existingContentDiv.innerHTML = '';
+    
+            if (selectedOption === 'option1') {
+                existingContentDiv.innerHTML =  '<h3 style=" color:darkred;">chocolate-pie</h3><p>Chocolate Pie Recipe - How to Make Chocolate Pie Its made with sugar, a little cornstarch, whole milk, egg yolks, vanilla, butter, and the star of the show, bittersweet chocolate. You make the filling on your stovetop and pour it into the baked (and cooled) pie crust. Then it goes into the fridge to set up</p>';
+            } else if (selectedOption === 'option2') {
+                existingContentDiv.innerHTML = '<h3 style=" color:red ;">Apple pie</h3><p>An apple pie is a fruit pie in which the principal filling is apples. Apple pie is often served with whipped cream, ice cream ("apple pie à la mode"), custard or cheddar cheese.[3] It is generally double-crusted, with pastry both above and below the filling; the upper crust may be solid or latticed (woven of crosswise strips). The bottom crust may be baked separately ("blind") to prevent it from getting soggy. Deep-dish apple pie often has a top crust only. Tarte Tatin is baked with the crust on top, but served with it on the bottom.</p>';
+            } else if (selectedOption === 'option3') {
+                existingContentDiv.innerHTML = '<h3 style=" color:yellow ;">Mango Pie</h3><p>Mango pie is a baked dessert featuring a macerated mango filling layered inside of a buttery pastry crust. Sugar, spices, and lemon juice add sweetness, warmth, and brightness to the tropical fruit base of this summer-friendly fruit pie. Home bakers can make this dessert as a double-crust pie with a solid or lattice top or a single-crust pie with a simple crimp along the edge of the bottom crust. Top your mango pie with whipped cream or vanilla ice cream for the ultimate warm, creamy treat.</p>';
+            } else if (selectedOption === 'option4') {
+                existingContentDiv.innerHTML = '<h3 style=" color:orange ;">ORANGE MERINGUE PIE</h3><p>We adore this recipe! A classic, buttery pie crust that is flakey and light, filled with a rich and tangy orange curd. Top with lots of whipped meringue clouds that taste like roasted marshmallow after baking. Delish</p>';
+            }
+        }
+    </script>
+    
+</body>
+</html>

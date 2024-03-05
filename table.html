@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+<style>
+   
+    table, 
+    td {
+        border:1px solid black;
+        border-collapse: collapse;
+        padding: 5px;
+        
+    }
+    table, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+th:nth-child(even),td:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+.shadow-text {
+        font-size: 30px;
+        font-family: Arial, sans-serif;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.95); 
+  }
+</style>
+<script>
+function save()
+{
+    localStorage.setItem("applepie",true);
+}
+window.onload=function(){
+    var favorite=document.getElementById('favorite')
+    if(window.localStorage)
+    {
+        var storage=window.localStorage;
+        if(Storage.getitem('applepie')=='true')
+        {
+            favorite.innerHTML="Apple pie is one of your favorites";
+        }
+    }
+}
+
+</script>
+</head>
+<body>
+</br></br></br>
+
+
+<main id="main">
+    <center>
+    <table>
+
+        <caption><h1 class="shadow-text">delicious selection of pies for you to enjoy!</h1> </caption>
+    <thead>
+        
+    </thead>
+    <tr>
+        <th colspan="2">Name</th>
+        <th >About</th>
+        <th>Price        </th>
+        <th>Link</th>
+      </tr>
+        <tr>
+<td><img src="img/1.jpg"/></td>
+<td>apple</td>
+<td>plain cheese cake. plain pleasure</td>
+<td>250.50 rs</td>
+<td>view details</td>
+</tr>
+<tr>
+    <td><img src="img/12.jpg"/></td>
+    <td>apple</td>
+    <td>plain cheese cake. plain pleasure</td>
+    <td>250.50 rs</td>
+    <td>view details</td>
+    </tr>
+    <tr>
+        <td><img src="img/3.jpg"/></td>
+        <td>apple</td>
+        <td>plain cheese cake. plain pleasure</td>
+        <td>250.50 rs</td>
+        <td>view details</td>
+        </tr>
+        <tr>
+            <td><img src="img/10.jpg"/></td>
+            <td>apple</td>
+            <td>plain cheese cake. plain pleasure</td>
+            <td>250.50 rs</td>
+            <td>view details</td>
+            </tr>
+            <tr>
+                <td><img src="img/orage.jpeg"/></td>
+                <td>orage</td>
+                <td>plain cheese cake. plain pleasure</td>
+                <td>250.50 rs</td>
+                <td><a href="connect.html">view details</a></td>
+                </tr>
+<tr>
+<td rowspan="2"><img src="img/33.jpg"/></td>
+<td>cherry pie</td>
+<td>Description goes here</td>
+<td>250.50 rs</td>
+                <td><a href="connect.html">view details</a></td>
+                
+ 
+</tr>
+
+</table>
+</center>
+
+</main>
+
+</div>
+</br></br></br></br></br></br></br></br></br></br></br>
+</body>
+</html>

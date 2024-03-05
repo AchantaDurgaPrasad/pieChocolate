@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Logout</title>
+</head>
+<body>
+
+<h2>Welcome User</h2>
+<button onclick="logout()">Logout</button>
+
+<script>
+function logout() {
+  // Clear session storage
+  sessionStorage.clear();
+  
+  // Redirect to login page (replace "login.html" with your login page URL)
+  window.location.href = "login.html";
+}
+</script>
+
+</body>
+</html>
